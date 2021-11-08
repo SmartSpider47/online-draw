@@ -1,0 +1,104 @@
+<!DOCTYPE HTMl>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ONLINE BLACKBOARD</title>
+	<link rel="stylesheet" type="text/css" href="style/styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body style="background-color: black;">
+	<div id="id_menu_main">
+
+		<br>
+
+	<center>
+		<div class="svg-wrapper" style="margin-top: 75px;">
+			  <svg height="60" style="margin-left: 50px;" width="480" xmlns="http://www.w3.org/2000/svg">
+			    <rect class="shape" height="60" width="400" />
+			    <div class="text">ONLINE BLACKBOARD</div>
+			  </svg>
+			</div>
+	</center>
+
+	<center>
+		
+		<button type="button" class="btn btn-primary col-sm-8 col-lg-6" style="height: 50px;" data-toggle="modal" data-target="#exampleModal">СОЗДАТЬ</button>
+		<br><br>
+		<button type="button" class="btn btn-primary col-sm-8 col-lg-6" style="height: 50px;" data-toggle="modal" data-target="#exampleModalSD">ВОЙТИ</button>
+
+	</center>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="border-color: aqua;">
+      <div class="modal-header" style="background-color: black;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:white;">СОЗДАТЬ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: black;">
+      	<center>
+      			<br>
+				<div class="input-container">
+					<input type="text" id="id_create_name" autocomplete="off" required=""/>
+					<label>Ваше имя</label>		
+				</div>
+				<br>
+				<div class="input-container">
+					<input type="text" id="id_create_draw" autocomplete="off" required=""/>
+					<label>Имя для рисунка</label>
+				</div>
+			</center>
+      </div>
+      <div class="modal-footer" style="background-color: black;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="id_btn_create">СОЗДАТЬ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalSD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="border-color: aqua;">
+      <div class="modal-header" style="background-color: black;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:white;">ВОЙТИ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: black;">
+      	<center>
+      			<br>
+				<div class="input-container">
+					<input type="text" id="id_enter_name" autocomplete="off" required=""/>
+					<label>Ваше имя</label>		
+				</div>
+				<br>
+				<div class="input-container">
+					<input type="text" id="id_enter_draw" autocomplete="off" required=""/>
+					<label>Имя рисунка</label>		
+				</div>
+			</center>
+      </div>
+      <div class="modal-footer" style="background-color: black;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"  id="id_btn_enter">ВОЙТИ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

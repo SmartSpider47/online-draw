@@ -1,0 +1,47 @@
+.css-color {
+	width: 50px;
+	height: 20px;
+	margin-left: 7px;
+	outline: none;
+	border: none;
+	background-color: black;
+}
+
+.css-info {
+	color: white;
+}
+
+.css-number {
+	margin-left: 7px;
+	width: 100px;
+	background-color: black;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	color: white;
+	text-align: center;
+}
+
+.css-svg {
+	background-color: white;
+	width: 110%;
+	height: 5000px;
+	position: fixed;
+}
+
+.css-select {
+	border: none;
+	outline: none;
+}
+
+.css-svg-ln {
+	width: 300px;
+	height: 10px;
+}
+
+.css-btn-type {
+	height: 25px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
